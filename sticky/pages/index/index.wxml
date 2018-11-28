@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="content">
+        Header
+    </view>
+    <view class="news static-news {{fixTop<scrollTop?'fix-news':''}}" id="nav"><text>我是想吸顶小仙女</text></view>
+    <view class="news-list">
+        <view wx:for="{{10}}" wx:key="{{index}}">
+            {{index+1}} 我是小仙女
+        </view>
+    </view>
+</view>
+  
